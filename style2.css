@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital@1&family=Poppins:ital,wght@0,300;0,600;1,500&family=Rubik:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding : 0 ;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+header {
+    margin: 15px;
+    padding: 15px;
+    display: inline-block;
+   
+}
+h1 {
+    color: blue;
+    font-weight: bold;
+ }
+ .container {
+    margin: 0 15% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    font-weight: bold;
+ }
+ .container .title h1 {
+    width: 300px;
+    margin-left: -30px;
+ }
+body {
+    background-color: #f0f2f5;
+    position: relative;
+    
+}
+.inscription {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+.inscription form {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow:0 0 10px rgba(0,0,0,0,0.1); 
+    position: relative;
+    border-radius: 20px;
+  }
+  .inscription form  i {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+  }
+  .inscription form h1 {
+    font-size: 30px;
+    color: black;
+  }
+  .inscription form hr {
+    margin: 10px 0;
+    border: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  .inscription input {
+    padding: 8px 5px ;
+    border-radius:6px ;
+    font-size: 15px;
+    background-color: #f5f6f7;
+    border: 1px solid #ccc;
+  }
+  .input-nom-prenom {
+    width: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .input-nom-prenom input {
+    width: 49%;
+  }
+  .num-mdp {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .label-class {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.date-naissance-select {
+    display: flex;
+    justify-content: space-between;
+     }
+     .date-naissance-select select {
+        width: 110px;
+        padding: 8px 5px;
+        border-radius: 6px;
+        outline: 0;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+      .genre-liste {
+        display: flex;
+        justify-content: space-between;
+      }
+      .genre-liste span {
+        border: 1px solid #ccc;
+       margin-bottom:  10px;
+        padding: 5px;
+        border-radius: 6px;
+      }
+      .genre-liste span input {
+        margin-left: 15px;
+      }
+      .text   p {
+        font-size: 11px;
+      }
+      p a  {
+        text-decoration: none;
+      }
+      .center-btn-submit {
+        text-align: center;
+         }
+         #btn-s-inscrire {
+            margin-top: 20px;
+            padding: 8px 70px;
+            background-color: #00a400;
+            color:#fff;
+          }
+          footer {
+            margin: 10px;
+            padding: 30px;
+            left: 20px;
+            width: 50px;
+         }
