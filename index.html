@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="IMG/image2.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/457f80db8c.js" crossorigin="anonymous"></script>
     <title>CHALENGE</title>
 </head>
 <body>
@@ -14,16 +15,79 @@
        <p> Avec facbook partager et restez en contact avec votre entourage</p>
 </div>
 <form class="formulaire">
-    <input type="email" placeholder="votre adress email ou numéro de téléphone" required width="350px" >
+    <input type="email" placeholder="votre adress email ou numero de telephone" required width="350px" >
     <input type="password" placeholder="Mot de passe" required>
     <input type="submit" value="Se connecter" class="btn-submit">
-    <a class="mdp-oublie" href="">Mot de passe oublié ?</a>
+    <a class="mdp-oublie" href="">Mot de passe oublie ?</a>
     <hr>
-    <a  href="" class="bnt-inscription">Créer nouveau compte</a>
+    <a  href="#"  onclick="afficher()" class="bnt-inscription">Creer nouveau compte</a>
 
    </form>
-  
     </section>
+<section class="inscription">
+    <form action="">
+        <i  onclick="afficher()"class="fa-solid fa-circle-xmark"></i>
+        <h1>S'inscrire</h1>
+        <h4>C'est rapide et facile </h4>
+        <hr>
+        <div class="input-no-prenom">
+            <input type="text" class="num-mdp" placeholder="Prenom">
+            <input type="text" class="num-mdp" placeholder="Nom de famille">
+        </div>
+        <input type="email" class="num-mdp" placeholder="Numero de mobile ou e-mail">
+        <input type="password" class="num-mdp" placeholder="Nouveau mot de passe">
+        <p class="label-class">Date de naissance</p>
+<div class="date-naissance-select">
+    <select>
+        <option >1</option>
+        <option >2</option>
+       </select>
+    <select>
+     <option >jan</option>
+     <option >fev</option>
+    </select>
+    <select>
+        <option >2022</option>
+        <option >2022</option>
+       </select>
+</div>
+<p class="label-class">Genre</p>
+<div class="genres-liste">
+    <span >
+        <label>Femme</label>
+        <input type="radio" name="genre">
+    </span>
+    <span>
+        <label>Homme</label>
+        <input type="radio" name="genre">
+    </span>
+    <span>
+        <label >Personaliser</label>
+        <input type="radio" name="genre">
+    </span>
+</div>
+
+<div class="text">
+    <p>Creer une page pour une célébrite,une marque ou une entreprise.</p>
+</div>
+
+<div class="center-btn-submit">
+    <input type="submit" value="S'inscrire" id="btn-s-inscrire">
+</div>
+    </form>
+</section>
+
+<script>
+    function afficher(){
+        document.querySelector('.inscription').classList.toggle('active') 
+    }    
+
+</script>
 
 </body>
+
+        <footer>
+            <a href="chalenge2.0.html" target="_blank">Cliquez ici </a>
+
+        </footer>
 </html>

@@ -9,6 +9,7 @@
  
 h1 {
     color: blue;
+    font-weight: bold;
  }
  body {
 background-color: #f0f2f5;
@@ -20,6 +21,7 @@ position: relative;
     align-items: center;
     justify-content: space-between;
     height: 100vh;
+    font-weight: bold;
  }
 
  .container .title h1 {
@@ -55,7 +57,150 @@ position: relative;
     box-shadow: 0 0 10px rgba(0,0,0,0,1);
     border-radius: 6px;
  }
- 
+ .formulaire input {
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   border-bottom: 7px;
+   border-radius: 15px;
+}
+.formulaire input[type='email'] :focus ,
+.formulaire input[type='password'] :focus {
+     outline:1px solid  #1877f2;
+}
 
 
- 
+.btn-submit {
+   background-color: #1877f2;
+   color: #fff;
+}
+.mdp-oublie {
+   font-size: 13px;
+   color: #1877f2;
+   text-decoration: none;
+   text-align: center;
+}
+.mdp-oublie:hover {
+text-decoration: underline;
+}
+.formulaire hr {
+   margin: 20px ;
+   background-color: #ccc;
+   border: 0;
+   width: 100%;
+   height: 1px;
+}
+ .bnt-inscription {
+   text-decoration: 0;
+   color: #fff ;
+   background-color: #00a400 ; 
+   text-align: center;
+   border-radius: 6px;
+   cursor: pointer;
+ }
+ .inscription {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   display: none;
+ }
+ .inscription.active {
+   display: flex;
+ }
+ .inscription form {
+   width: 400px;
+   background-color: #fff;
+   padding: 20px;
+   box-shadow:0 0 10px rgba(0,0,0,0,0.1); 
+   position: relative;
+ }
+ .inscription form  i {
+   position: absolute;
+   right: 20px;
+   cursor: pointer;
+ }
+ .inscription form h1 {
+   font-size: 30px;
+   color: rgba(0,0,0,0.5);
+ }
+ .inscription form hr {
+   margin: 10px 0;
+   border: 0;
+   width: 100%;
+   height: 1px;
+   background-color: #ccc;
+ }
+ .inscription input {
+   padding: 8px 5px ;
+   border-radius:6px ;
+   font-size: 15px;
+   background-color: #f5f6f7;
+   border: 1px solid #ccc;
+ }
+ .input-nom-prenom {
+   width: 10px;
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+ }
+ .input-nom-prenom input {
+   width: 49%;
+ }
+ .num-mdp {
+   width: 100%;
+   margin-bottom: 10px;
+ }
+ .label-class {
+          font-size: 12px;
+          margin-bottom: 3px;
+ }
+ .date-naissance-select {
+display: flex;
+justify-content: space-between;
+ }
+ .date-naissance-select select {
+   width: 110px;
+   padding: 8px 5px;
+   border-radius: 6px;
+   outline: 0;
+   border: 1px solid #ccc;
+   margin-bottom: 10px;
+ }
+ .genre-liste {
+   display: flex;
+   justify-content: space-between;
+ }
+ .genre-liste span {
+   border: 1px solid #ccc;
+  margin-bottom:  10px;
+   padding: 5px;
+   border-radius: 6px;
+ }
+ .genre-liste span input {
+   margin-left: 15px;
+ }
+ .text   p {
+   font-size: 11px;
+ }
+ .center-btn-submit {
+text-align: center;
+ }
+ #btn-s-inscrire {
+   margin-top: 20px;
+   padding: 8px 70px;
+   background-color: #00a400;
+   color:#fff;
+ }
+footer {
+   margin: 10px;
+   padding: 10px;
+   left: 20px;
+   height: 50px;
+}
